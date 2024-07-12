@@ -1,5 +1,19 @@
 # virtual environment
-.venv
+.venv/
 
 # dotenv files
 .env
+
+# python
+__pycache__
+
+# django
+staticfiles/
+db.sqlite3
+
+# IDE
+.vscode
+.DS_Store
+
+# postgres data mount
+pg_data/
