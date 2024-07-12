@@ -4,8 +4,6 @@ services:
     image: postgres:15
     environment:
       - POSTGRES_PASSWORD=postgres
-    volumes:
-      - ./pg_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
 
@@ -13,7 +11,9 @@ services:
     container_name: app-api
     build: .
     command: >
-      sh -c "python manage.py migrate &&
+      sh -c "python manage.py spectacular --color --file schema.yml && 
+             python manage.py collectstatic --noinput &&
+             python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./src:/code

@@ -11,6 +11,9 @@ __pycache__
 staticfiles/
 db.sqlite3
 
+# drf_spectacular
+schema.yml
+
 # IDE
 .vscode
 .DS_Store
