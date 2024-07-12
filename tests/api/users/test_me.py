@@ -13,3 +13,7 @@ def test__with_authenticated_user__returns_user_data(client, user):
     assert data['email'] == user.email
     assert data['name'] == user.name
     assert data['id'] == user.id
+
+def test__with_anonymous_user__returns_401(client, user):
+    r = client.get(f"/users/me/")
+    assert r.status_code == 401
