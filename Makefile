@@ -1,4 +1,7 @@
+export PYTHONDONTWRITEBYTECODE=1
+
 container_name = 'app-api'
+pytest_workers = 3
 
 help:
 	@echo
@@ -44,3 +47,6 @@ sh:
 
 linter:
 	pre-commit run --all-files
+
+test:
+	pytest -n $(pytest_workers) --cov=src/ --import-mode=importlib
