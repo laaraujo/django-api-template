@@ -1,11 +1,9 @@
-from django.shortcuts import render
-
 # Create your views here.
 # From https://docs.djangoproject.com/en/5.0/topics/auth/customizing/#a-full-example
-
 from core.models import BaseModel
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
+from django.shortcuts import render
 
 
 class UserManager(BaseUserManager):

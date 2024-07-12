@@ -1,11 +1,14 @@
-# virtual environment
-.venv/
-
 # dotenv files
 .env
+.env.*
+!.env.example
 
 # python
+.venv/
 __pycache__
+.ruff_cache
+.pytest_cache
+.coverage
 
 # django
 staticfiles/
@@ -17,6 +20,3 @@ schema.yml
 # IDE
 .vscode
 .DS_Store
-
-# postgres data mount
-pg_data/

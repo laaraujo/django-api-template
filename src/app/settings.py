@@ -1,6 +1,6 @@
+import os
 from datetime import timedelta
 from pathlib import Path
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_spectacular",  # docs
     "djoser",
-
 ]
 
 MIDDLEWARE = [
@@ -172,11 +171,13 @@ DJOSER = {
     "SEND_ACTIVATION_EMAIL": True,
     "ACTIVATION_URL": "/validate-email/{uid}/{token}/",
     "PASSWORD_RESET_CONFIRM_URL": "password-reset/confirm/{uid}/{token}/",
-    "PASSWORD_RESET_CONFIRM_RETYPE": True, # TODO evaluate if really needed
-    "USER_CREATE_PASSWORD_RETYPE": True, 
+    "PASSWORD_RESET_CONFIRM_RETYPE": True,  # TODO evaluate if really needed
+    "USER_CREATE_PASSWORD_RETYPE": True,
 }
 
-CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",")
+CORS_ALLOWED_ORIGINS = os.environ.get(
+    "CORS_ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000"
+).split(",")
 
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

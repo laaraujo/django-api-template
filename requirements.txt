@@ -3,10 +3,12 @@ asttokens==2.4.1
 attrs==23.2.0
 certifi==2024.7.4
 cffi==1.16.0
+cfgv==3.4.0
 charset-normalizer==3.3.2
 cryptography==42.0.8
 decorator==5.1.1
 defusedxml==0.8.0rc2
+distlib==0.3.8
 Django==5.0.7
 django-cors-headers==4.4.0
 django-filter==24.2
@@ -16,6 +18,8 @@ djangorestframework-simplejwt==5.3.1
 djoser==2.2.3
 drf-spectacular==0.27.2
 executing==2.0.1
+filelock==3.15.4
+identify==2.6.0
 idna==3.7
 inflection==0.5.1
 ipython==8.26.0
@@ -24,9 +28,12 @@ jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
 Markdown==3.6
 matplotlib-inline==0.1.7
+nodeenv==1.9.1
 oauthlib==3.2.2
 parso==0.8.4
 pexpect==4.9.0
+platformdirs==4.2.2
+pre-commit==3.7.1
 prompt_toolkit==3.0.47
 psycopg2-binary==2.9.9
 ptyprocess==0.7.0
@@ -48,5 +55,6 @@ stack-data==0.6.3
 traitlets==5.14.3
 uritemplate==4.1.1
 urllib3==2.2.2
+virtualenv==20.26.3
 wcwidth==0.2.13
 whitenoise==6.7.0

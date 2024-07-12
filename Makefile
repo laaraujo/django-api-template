@@ -11,6 +11,7 @@ help:
 	@echo createsuperuser .......... : Django createsuperuser command
 	@echo shell .................... : Django shell command
 	@echo sh ....................... : SSH into local API container
+	@echo linter ................... : Run Ruff linter against all files in this repo
 	@echo
 
 
@@ -40,3 +41,6 @@ shell:
 
 sh:
 	docker exec -it $(container_name) /bin/sh
+
+linter:
+	pre-commit run --all-files

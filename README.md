@@ -18,3 +18,4 @@ Template repo to kickstart API projects
 - Auto Swagger Docs ([DRF Spectacular](https://drf-spectacular.readthedocs.io/))
 - [Custom user model](./src/users/models.py) (email, password and name)
 - Email via SMTP
+- Pre-commit hooks ([Ruff](https://docs.astral.sh/ruff/) and [OTB Pre-commit hooks](https://github.com/pre-commit/pre-commit-hooks))
