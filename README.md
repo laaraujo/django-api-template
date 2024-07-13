@@ -24,3 +24,18 @@ Template repo to kickstart API projects
   - Test run parallelization with (pytest-xdist)[https://pytest-xdist.readthedocs.io/]
   - [Faker](https://faker.readthedocs.io/)
   - [Coverage](https://pytest-cov.readthedocs.io/)
+
+## Make commands
+
+```
+build .................... : Build local containers
+run ...................... : Run local containers
+stop ..................... : Stop local containers
+down ..................... : Stop and delete local container
+makemigrations ........... : Django makemigrations command
+migrate .................. : Django migrate command
+createsuperuser .......... : Django createsuperuser command
+shell .................... : Django shell command
+sh ....................... : SSH into local API container
+linter ................... : Run Ruff linter against all files in this repo
+```
