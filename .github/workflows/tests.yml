@@ -1,4 +1,4 @@
-name: Automated testing
+name: Tests
 
 on:
   push:
@@ -36,7 +36,6 @@ jobs:
       DB_PASSWORD: postgres
       DB_HOST: localhost
       DB_PORT: 5432
-      # DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
 
     steps:
       - name: Checkout code

@@ -1,3 +1,5 @@
+[![Deployment](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml)
+
 # Django API Template
 
 Template repo to kickstart API projects
