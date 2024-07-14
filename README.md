@@ -1,5 +1,5 @@
-[![Deployment](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml)
-[![Coverage](https://codecov.io/gh/laaraujo/django-api-template/graph/badge.svg?token=6187LG7Y30)](https://codecov.io/gh/laaraujo/django-api-template)
+[![tests](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/laaraujo/django-api-template/graph/badge.svg?token=6187LG7Y30)](https://codecov.io/gh/laaraujo/django-api-template)
 
 # Django API Template
 
