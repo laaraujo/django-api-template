@@ -6,7 +6,7 @@ def test__with_authenticated_user__returns_user_data(client, user):
     headers = {
         "Authorization": f"JWT {jwt}"
     }
-    r = client.get(f"/users/me/", headers=headers)
+    r = client.get("/users/me/", headers=headers)
     assert r.status_code == 200
     data = r.json()
     print(data)
@@ -15,5 +15,5 @@ def test__with_authenticated_user__returns_user_data(client, user):
     assert data['id'] == user.id
 
 def test__with_anonymous_user__returns_401(client, user):
-    r = client.get(f"/users/me/")
+    r = client.get("/users/me/")
     assert r.status_code == 401

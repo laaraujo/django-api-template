@@ -6,6 +6,7 @@ from rest_framework.test import APIClient
 from users.models import User
 
 from tests.utils import create_jwt_token, faker
+from django.contrib.auth.hashers import make_password
 
 
 def pytest_collection_modifyitems(items):
@@ -25,6 +26,8 @@ def client() -> APIClient:
 @pytest.fixture
 def user_factory() -> Callable[..., User]:
     def create_user(**kwargs) -> User:
+        if 'password' in kwargs:
+            kwargs['password'] = make_password(kwargs['password'])
         return baker.make(User, **kwargs)
 
     return create_user
