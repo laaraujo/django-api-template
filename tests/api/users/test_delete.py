@@ -28,3 +28,9 @@ def test__with_anonymous_user__returns_401(client, user_factory):
     user = user_factory(password=pwd)
     r = client.delete(f"/users/{user.id}/", data={"current_password": pwd})
     assert r.status_code == 401
+
+def test__with_invalid_id__returns_404(client, user):
+    client.force_authenticate(user)
+    invalid_id = user.id + 1
+    r = client.delete(f"/users/{invalid_id}/")
+    assert r.status_code == 404
