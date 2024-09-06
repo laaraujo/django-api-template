@@ -20,3 +20,4 @@ schema.yml
 # IDE
 .vscode
 .DS_Store
+.idea
