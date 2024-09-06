@@ -37,7 +37,7 @@ migrate:
 	docker compose run app python manage.py migrate
 
 createsuperuser:
-	docker compose run app python manage.py createsuperuser
+	docker compose run app python manage.py createsuperuser --no-input
 
 shell:
 	docker compose run app python manage.py shell -i ipython
