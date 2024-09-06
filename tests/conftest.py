@@ -37,6 +37,10 @@ def user_factory() -> Callable[..., User]:
 def user(user_factory: Callable[..., User]) -> User:
     return user_factory(is_active=True, is_admin=False)
 
+@pytest.fixture
+def admin_user(user_factory: Callable[..., User]) -> User:
+    return user_factory(is_active=True, is_admin=True)
+
 
 @pytest.fixture
 def jwt_token(user: User) -> str:
