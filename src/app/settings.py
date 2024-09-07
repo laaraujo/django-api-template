@@ -174,6 +174,7 @@ DJOSER = {
     "PASSWORD_RESET_CONFIRM_URL": "password-reset/confirm/{uid}/{token}/",
     "PASSWORD_RESET_CONFIRM_RETYPE": True,  # TODO evaluate if really needed
     "USER_CREATE_PASSWORD_RETYPE": True,
+    "PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND": True,
 }
 
 CORS_ALLOWED_ORIGINS = os.environ.get(
