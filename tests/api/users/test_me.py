@@ -9,7 +9,6 @@ def test__with_authenticated_user__returns_user_data(client, user):
     r = client.get("/users/me/", headers=headers)
     assert r.status_code == 200
     data = r.json()
-    print(data)
     assert data['email'] == user.email
     assert data['name'] == user.name
     assert data['id'] == user.id
