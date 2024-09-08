@@ -4,6 +4,7 @@
 import pytest
 from tests.utils import faker
 from users.models import User
+from django.core import mail
 
 def test__creates_user(client):
     password = faker.password()
@@ -20,6 +21,8 @@ def test__creates_user(client):
     user = User.objects.get(id=data["id"])
     assert data["name"] == user.name
     assert data["email"] == user.email
+    assert len(mail.outbox) == 1
+    assert mail.outbox[0].to == [user.email]
 
 
 @pytest.mark.parametrize("field", ["email", "name", "password", "re_password"])
