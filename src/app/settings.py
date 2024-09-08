@@ -173,6 +173,7 @@ DJOSER = {
     "ACTIVATION_URL": "/validate-email/{uid}/{token}/",
     "PASSWORD_RESET_CONFIRM_URL": "password-reset/confirm/{uid}/{token}/",
     "PASSWORD_RESET_CONFIRM_RETYPE": True,  # TODO evaluate if really needed
+    "SET_PASSWORD_RETYPE": True,  # TODO evaluate if really needed
     "USER_CREATE_PASSWORD_RETYPE": True,
     "PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND": True,
 }
