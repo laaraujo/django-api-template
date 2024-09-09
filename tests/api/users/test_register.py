@@ -2,9 +2,11 @@
 # Missing required fields - 400
 
 import pytest
-from tests.utils import faker
-from users.models import User
 from django.core import mail
+from users.models import User
+
+from tests.utils import faker
+
 
 def test__creates_user(client):
     password = faker.password()
@@ -13,7 +15,7 @@ def test__creates_user(client):
         "email": faker.email(),
         "password": password,
         "re_password": password,
-        "name": faker.name()
+        "name": faker.name(),
     }
     r = client.post("/users/", data=payload)
     assert r.status_code == 201
@@ -32,13 +34,10 @@ def test__with_missing_fields__returns_400(field, client):
         "email": faker.email(),
         "password": password,
         "re_password": password,
-        "name": faker.name()
+        "name": faker.name(),
     }
     del payload[field]
     r = client.post("/users/", data=payload)
     assert r.status_code == 400
     data = r.json()
     assert data[field] == ["This field is required."]
-
-
-

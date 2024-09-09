@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "users",
     "rest_framework",
-    "rest_framework.authtoken", # to avoid AttributeError: type object 'Token' has no attribute 'objects'
+    "rest_framework.authtoken",  # to avoid AttributeError: type object 'Token' has no attribute 'objects'
     "drf_spectacular",  # docs
     "djoser",
 ]

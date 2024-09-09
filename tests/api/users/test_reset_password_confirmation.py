@@ -1,7 +1,8 @@
-import pytest
-from tests.utils import faker
-from django.contrib.auth.tokens import default_token_generator
 import djoser.utils
+import pytest
+from django.contrib.auth.tokens import default_token_generator
+
+from tests.utils import faker
 
 
 def test__with_valid_uid_and_token__updates_password(client, user):
