@@ -40,7 +40,7 @@ parso==0.8.4
 pexpect==4.9.0
 platformdirs==4.2.2
 pluggy==1.5.0
-pre-commit==3.7.1
+pre-commit==3.8.0
 prompt_toolkit==3.0.47
 psycopg2-binary==2.9.9
 ptyprocess==0.7.0
