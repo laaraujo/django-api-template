@@ -32,7 +32,7 @@ jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
 Markdown==3.6
 matplotlib-inline==0.1.7
-model-bakery==1.18.2
+model-bakery==1.19.5
 nodeenv==1.9.1
 oauthlib==3.2.2
 packaging==24.1
