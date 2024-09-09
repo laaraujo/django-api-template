@@ -47,7 +47,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.22
 Pygments==2.18.0
-PyJWT==2.8.0
+PyJWT==2.9.0
 pytest==8.2.2
 pytest-cov==5.0.0
 pytest-django==4.8.0
