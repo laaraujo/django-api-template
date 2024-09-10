@@ -11,3 +11,7 @@ updates:
       version-updates:
         patterns:
           - "*"
+  - package-ecosystem: "github-actions"
+    directory: "/" # no need to specify ".github/workflows"
+    schedule:
+      interval: "monthly"
