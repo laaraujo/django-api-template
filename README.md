@@ -31,8 +31,8 @@ Opinionated template repo to kickstart Back-end/API projects with Django Rest Fr
 ## Local setup
 
 ```sh
-git clone git@github.com:laaraujo/autotrack-abackend.git # clone this repo
-cd autotrack-abackend # cd into repository directory
+git clone git@github.com:laaraujo/django-api-template.git # clone this repo
+cd django-api-template # cd into repository directory
 python -m venv .venv # create virtual environment
 source .venv/bin/activate # activate virtual environment
 pip install -r requirements.txt # install dependencies
