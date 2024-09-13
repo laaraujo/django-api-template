@@ -10,7 +10,7 @@ cryptography==42.0.8
 decorator==5.1.1
 defusedxml==0.8.0rc2
 distlib==0.3.8
-Django==5.0.7
+Django==5.1.1
 django-cors-headers==4.4.0
 django-filter==24.2
 django-templated-mail==1.1.1
