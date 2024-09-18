@@ -1,5 +1,6 @@
 [![tests](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/laaraujo/django-api-template/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/gh/laaraujo/django-api-template/graph/badge.svg?token=6187LG7Y30)](https://codecov.io/gh/laaraujo/django-api-template)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Django API Template
 
