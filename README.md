@@ -57,3 +57,10 @@ shell .................... : Django shell command
 sh ....................... : SSH into local API container
 linter ................... : Run Ruff linter against all files in this repo
 ```
+
+## Documentation
+
+Swagger docs are available in the `/docs/` endpoint (http://localhost:8000/docs/).
+
+:warning: You'll get a `403 Forbidden` response by default unless you are already logged in with an `admin` account (http://localhost:8000/admin/).
+If you want to change this behaviour you can modify the required permissions in [./src/app/urls.py](./src/app/urls.py)
