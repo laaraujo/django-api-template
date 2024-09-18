@@ -15,6 +15,7 @@ help:
 	@echo shell .................... : Django shell command
 	@echo sh ....................... : SSH into local API container
 	@echo linter ................... : Run Ruff linter against all files in this repo
+	@echo test ..................... : Run automated tests
 	@echo
 
 
