@@ -71,6 +71,6 @@ stack-data==0.6.3
 traitlets==5.14.3
 uritemplate==4.1.1
 urllib3==2.2.2
-virtualenv==20.26.3
+virtualenv==20.26.6
 wcwidth==0.2.13
 whitenoise==6.7.0
